@@ -1,0 +1,128 @@
+# ============================================================
+# .gitignore for Breast Cancer Detection Project
+# ============================================================
+
+# ── Python Virtual Environment ──────────────────────────────
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# ── Dataset (Large files - use Roboflow download script) ────
+Cancer-Detecion-1/
+datasets/
+data/
+*.zip
+
+# ── Model Weights (Too large for GitHub) ────────────────────
+runs/
+weights/
+*.pt
+*.pth
+*.onnx
+*.engine
+*.tflite
+!yolov8s.pt
+
+# ── Training Outputs ─────────────────────────────────────────
+runs/detect/
+runs/train/
+runs/val/
+wandb/
+*.log
+
+# ── Python Cache ─────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# ── Jupyter Notebook ─────────────────────────────────────────
+.ipynb_checkpoints
+*.ipynb
+
+# ── IDE / Editor ─────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# ── Operating System ─────────────────────────────────────────
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# ── Environment Variables ────────────────────────────────────
+.env
+.env.local
+.env.*.local
+*.env
+
+# ── Temporary Files ──────────────────────────────────────────
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+
+# ── Roboflow API Key (IMPORTANT - Don't expose!) ─────────────
+roboflow_config.py
+api_key.txt
+
+# ── Test Outputs ─────────────────────────────────────────────
+test_results/
+predictions/
+output/
+
+# ── PyTorch & CUDA ───────────────────────────────────────────
+*.caffemodel
+*.pb
+*.tflite
+*.mlmodel
+
+# ── Gradio Cache ─────────────────────────────────────────────
+gradio_cached_examples/
+flagged/
+
+# ── Coverage Reports ─────────────────────────────────────────
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# ── Documentation Build ──────────────────────────────────────
+docs/_build/
+
+# ── Keep These Files ─────────────────────────────────────────
+# !.gitkeep files in empty directories
+!**/.gitkeep

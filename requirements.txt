@@ -1,0 +1,34 @@
+# ============================================================
+# Python Dependencies for Breast Cancer Detection
+# Install: pip install -r requirements.txt
+# ============================================================
+
+# ── Core Deep Learning ──────────────────────────────────────
+torch>=2.0.0
+torchvision>=0.15.0
+ultralytics>=8.0.0
+
+# ── Computer Vision ─────────────────────────────────────────
+opencv-python>=4.8.0
+Pillow>=10.0.0
+
+# ── Web Interface ───────────────────────────────────────────
+gradio>=4.0.0
+
+# ── Dataset Management ──────────────────────────────────────
+roboflow>=1.1.0
+
+# ── Scientific Computing ────────────────────────────────────
+numpy>=1.24.0
+pandas>=2.0.0
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# ── Utilities ───────────────────────────────────────────────
+tqdm>=4.65.0
+PyYAML>=6.0
+requests>=2.31.0
+
+# ── Optional: GPU Acceleration ──────────────────────────────
+# Install CUDA version separately if needed:
+# pip install torch torchvision --index-url https://download.pytorch.org/whl/cu118
